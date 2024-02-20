@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements at LPU</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".slider");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            let slideIndex = 0;
+
+            // Function to show the current slide
+            function showSlide() {
+                slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+
+            // Function to move to the next slide
+            function nextSlide() {
+                if (slideIndex < slider.children.length - 1) {
+                    slideIndex++;
+                }
+                showSlide();
+            }
+
+            // Function to move to the previous slide
+            function prevSlide() {
+                if (slideIndex > 0) {
+                    slideIndex--;
+                }
+                showSlide();
+            }
+
+            // Event listeners for next and previous buttons
+            nextBtn.addEventListener("click", nextSlide);
+            prevBtn.addEventListener("click", prevSlide);
+
+            // Show the initial slide
+            showSlide();
+        });
+</script>
+    <style>
+
+/* Darker background on mouse-over */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             min-height: 100vh; 
+            /* background-image: url(placement3.jpeg); */
+            background-repeat: no-repeat;
+            background-size: cover;             
+        }
+
+        h1 {
+            color: skyblue;
+            margin-top: -1%;
+            font-size: 300%;
+            margin-left: 28%;
+        }
+        h2{
+            margin-left: -89%;
+            margin-top: -7.5%;
+            color: rgb(111, 199, 234);
+        }
+
+        /* .container-wrapper {
+            display: flex;
+        } */
+
+        .container {
+            width: 145px;
+            height: 110px;
+            background-color: rgb(170, 218, 238);
+            border: 2px solid rgb(130, 127, 127);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: -430%;
+            margin-top: -12%;
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .slider-container {
+            position: absolute;
+            max-width: 550px;
+            margin-left: 30%;
+            margin-top:  9%;
+            overflow: hidden;
+            border: 1px solid skyblue;
+
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button {
+            background-color: skyblue;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid rgb(79, 190, 234);
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+
+        button:hover {
+            background-color: rgb(179, 220, 237);
+        }
+        /*Home*/
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: fixed;
+}
+
+li {
+  float: left;
+  background-color: rgb(166, 218, 238);
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(184, 224, 242);
+}
+
+/* li a.active {
+  color: black;
+  background-color: rgb(238, 238, 150);
+} */
+ul{
+        margin-left: 910%;
+        margin-top: 4%;
+        background-color: skyblue;
+    }
+    #footer{
+width:99%;
+font-size: larger;
+background-color: skyblue;
+height:2.3%;
+position:fixed;
+bottom:0px;
+text-align: center;
+/* margin: 0%; */
+color: white;
+border: 1px solid white;
+}
+    </style>
+</head>
+
+<body background="placement3.jpeg">
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+    </div>
+    <h1>Placement at LPU</h1>
+    <h2>Recent <br>Placements</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="place5.jpeg" alt="Image 4">
+            <img src="place6.jpeg" alt="Image 1">
+            <img src="place4.jpeg" alt="Image 1">
+            <img src="place1.webp" alt="Image 3">
+            <img src="place7.jpeg" alt="Image 5">
+            <img src="place8.jpeg" alt="Image 6">
+            <img src="place10.png" alt="Image 7">
+            <img src="place11.png" alt="Image 8">
+            <img src="place12.png" alt="Image 9">
+            <img src="place13.png" alt="Image 10">
+        </div><br>
+       <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+    <div id="footer" style="font-weight: bold;">
+        &copy; Shlok Paliwal
+        </div>
+    <pre><div class="container-wrapper">
+        <div class="container">2000+
+          <br>Recruiters hired
+ LPU students
+        </div> 
+        <div class="container">1000+
+            <br>Companies offering
+CTC 5 Lacs p.a.
+or above
+        </div>
+        <div class="container">
+350+
+            <br>Recruiters of
+IITs/IIMs/NITs 
+also
+hire from LPU
+        </div>
+        <div class="container">&#8377 1.6 Lacs
+            <br>Highest Internship
+ Stipend per month
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

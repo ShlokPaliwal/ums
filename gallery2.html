@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      LPU Gallery
+    </title>
+    <div>
+      <ul>
+          <li><a href="Form.html">Registration</a></li>
+          <li><a href="query.html">Query</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+  </div>
+    <title>My Image Gallery</title>
+    <style>
+      /* for grid layout for the images */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        background-color: rgb(200, 230, 242);
+      }
+      /* Style */
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        
+      }
+      /* borders to images  */
+      .gallery img {
+        border: 2px solid rgb(165, 158, 158);
+        border-radius: 5px;
+       
+      }
+      /* hover */
+      .gallery img:hover {
+        transform: scale(1.3);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+      } 
+      h1 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        margin-top: -0.5%;
+        
+      }
+      #footer{
+color: white;
+border: 1px solid white;
+background-color: rgb(108, 187, 218);
+font-size: larger;
+width:100%;
+height:3%;
+position:fixed;
+bottom:0px;
+text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: larger;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(172, 220, 239);
+}
+
+/* li a.active {
+  color: black;
+  background-color: rgb(232, 191, 145);
+} */
+ul{
+        margin-left: 73%;
+        
+    }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: white;">Gallery</h1>
+        <style>
+            body{
+                background-color: skyblue;
+            }
+        </style>
+    <div class="gallery">
+        <img src="lpu1.jpeg" alt="Image 1">
+        <img src="scholarship.jpeg" alt="Image 2">
+        <img src="classroom.jpeg" alt="Image 3">
+        <img src="library.jpeg" alt="Image 4">
+        <img src="sports.jpeg" alt="Image 5">
+        <img src="mall.jpeg" alt="Image 6">
+        <img src="auditorium.jpeg" alt="Image 7">
+        <img src="mess.webp" alt="Image 8">
+        <img src="modi.jpeg" alt="Image 9">
+        <img src="agriculture.jpeg" alt="Image 10">
+        <img src="security.jpeg" alt="Image 10">
+        <img src="swimming.jpeg" alt="Image 10">
+        <img src="foodcourt.webp" alt="Image 10">
+        <img src="hackathon.jpeg" alt="Image 10">
+        <img src="admission.jpeg" alt="Image 10">
+    </div>
+    <div id="footer"style="font-weight: bold;">
+        &copy; Shlok Paliwal
+        </div>
+  </body>
+</html>

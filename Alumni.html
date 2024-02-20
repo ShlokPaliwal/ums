@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+</head>
+<script>
+     function showVideo(videoNum) {
+            // Hide all video containers
+            var videoContainers = document.querySelectorAll('.video-container');
+            for (var i = 0; i < videoContainers.length; i++) {
+                videoContainers[i].style.display = 'none';
+            }
+
+            // Show the selected video
+            var videoContainer = document.getElementById('video' + videoNum);
+            if (videoContainer) {
+                videoContainer.style.display = 'block';
+            }
+        }
+</script>
+<div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+</div>
+<body style="background-color: antiquewhite;">
+    <style>
+        #body{
+            background-image: url(alumni1.png);
+            /* background-color: antiquewhite; */
+            background-repeat: no-repeat;
+            background-size: 30%;
+            width: 1000px;
+            height: 1000px;
+            margin-left: 51%;
+            margin-top: -48%;
+            
+        }
+        #img{
+            background-image: url(projector.jpeg);
+            /* background-color: rgb(239, 179, 100); */
+            background-repeat: no-repeat;
+            background-size: 90%;
+            width: 1000px;
+            height: 1000px;
+            margin-left: 32%;
+            margin-top: -59.6%;
+            
+        }
+        .photo-container {
+            text-align: center;
+            margin-top: -10.2%;
+            
+        }
+
+        .photo {
+            width: 350px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  background-color: rgb(197, 140, 66);
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(252, 244, 236);
+}
+
+ul{
+        margin-left: 95%;
+        font-size: larger;
+    }
+    h1{
+       margin-left: 50%;
+       margin-top: 3%;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+    #footer{
+width:98.7%;
+font-size: larger;
+background-color: rgb(197, 140, 66);
+height:3%;
+position:fixed;
+bottom:0px;
+text-align: center;
+margin:0 ;
+color: white;
+border: 1px solid white;
+}
+.video-container {
+            display: none;
+            margin-left: 36.2%;
+            margin-top: -36%;
+           
+        }
+
+        .video-buttons {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 30%;
+        }
+
+        .video-button {
+            background-color: rgb(197, 140, 66);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .video-button:hover {
+            background-color: rgb(242, 212, 173)  ;
+        }
+    </style>
+   <h1>Words from our Alumni</h1>   
+    <div class="photo-container">
+        <img class="photo" src="al1.jpeg" alt="Photo 1">
+        <img class="photo" src="al2.jpeg" alt="Photo 2">
+        <img class="photo" src="al3.jpeg" alt="Photo 3">
+    </div>
+    <div class="video-container" id="video1" style="display: block; ">
+        <iframe width="770" height="391"  src="https://www.youtube.com/embed/DUihg55I4Xk"></iframe>
+    </div>
+    <div class="video-container" id="video2">
+        <iframe width="768" height="389" src="https://www.youtube.com/embed/36Z448W0nYY"></iframe>
+    </div>
+    <div class="video-container" id="video3">
+        <iframe width="768" height="389" src="https://www.youtube.com/embed/EbXTCKBKlg4"></iframe>
+    </div>
+
+    <div class="video-buttons">
+        <button class="video-button" onclick="showVideo(1)">Video 1</button>
+        <button class="video-button" onclick="showVideo(2)">Video 2</button>
+        <button class="video-button" onclick="showVideo(3)">Video 3</button>
+    </div>
+    <div id="body"></div>
+        <div id="img"></div>
+    <div id="footer" style="font-weight: bold;">
+        &copy; Shlok Paliwal
+        </div>
+        
+</body>
+</html>

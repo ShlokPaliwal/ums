@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>
+    Registration
+  </title>
+    <div>
+        <ul>
+            <li><a href="Form.html">Registration</a></li>
+            <li><a href="query.html">Query</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+    </div>
+<h2 style="text-align: center;margin-top: 20px;margin-left:8%; color: white;">Registration Form</h2>
+<style>
+    div{
+        text-align:center; font-size:larger; 
+        font-family:'Times new roman';
+        
+    }
+
+    body{background-image:url("r2.png");
+    background-repeat:round;
+
+    }
+    #footer{
+background:skyblue;
+border: 1px solid white;
+width:100%;
+color: white;
+height:3%;
+position:absolute;     
+bottom:0px;
+text-align: center;
+text-align: center;
+}
+
+        fieldset{
+            
+            width:30%;
+            background-color: rgb(196, 227, 238);
+            margin-left: 37%;
+            border-radius: 5%;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: skyblue;
+}
+
+/* li a.active {
+  color: black;
+  background-color: rgb(238, 238, 150);
+} */
+ul{
+        margin-left: 73%;
+    }
+</style>
+</head>
+
+<div>
+    
+    <form>
+        <fieldset ><legend><h3 style="color: white;"></h5></legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" ><br><br>
+        <label for="fname">Last Name</label>
+        <input type="text" id="lname"><br><br>
+        <label for="address">&nbsp;Address</label>
+        <input type="text" id="address"><br><br>
+        <label for="Select Gender"> Gender</label><br><br>
+        <input type="radio" id="Select Gender" value="Male" name="gender" >
+        <label for="Select Gender">Male</label><br><br>
+        <input type="radio" id="Female" value="Female" name="gender"> 
+        <label for="Female">Female</label><br><br>
+        <label for="Select Course">Select Course</label>
+        <select name="Select Course" id="Select Course">
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BSC">BSC</option>
+            <option value="MSC">MSC</option>
+        </select>
+        <br><br>
+        <input type="checkbox" id="checkbox" >
+        <label for="checkbox">Entered information is correct</label> 
+        <h3>Feedback</h1>
+        <textarea name="Address" rows="7"  placeholder="Enter your feedback" ></textarea><br><br>
+        <input type="Submit" value="Submit">
+    </form>
+</div>
+<div id="footer"style="font-weight: bold;">
+    &copy; Shlok Paliwal
+</div>
+</html>

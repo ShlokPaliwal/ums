@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script></script>
+	<div>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+    </div>
+	<title>Sign Up Page</title>
+	<style>
+		body {
+			/* background-color: rgb(156, 216, 237); */
+			background-image:url('login1.jpeg');
+			font-family: Arial, sans-serif;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 50px 20px;
+			margin-top: 4%;
+			background-color:rgb(184, 224, 242);
+			border-radius: 10px;
+			display: block;
+			
+		}
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		input[type="text"], input[type="email"], input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 15px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-sizing: border-box;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		}
+		
+		button[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 15px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.login {
+			/* margin-top: 15px; */
+			text-align: center;
+			font-size: 1.1rem;
+		}
+		.login a {
+			color: #4CAF50;
+			text-decoration: none;
+			transition: color 0.2s ease-in-out;
+		}
+		.login a:hover {
+			color: #3e8e41;
+		}
+		#footer{
+width:99%;
+font-size: larger;
+background-color: skyblue;
+height:3%;
+position:fixed;
+bottom:0px;
+text-align: center;
+/* margin: 0%; */
+color: white;
+border: 1px solid white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  background-color: skyblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(184, 224, 242);
+}
+
+/* li a.active {
+  color: black;
+  background-color: rgb(238, 238, 150);
+} */
+ul{
+        margin-left: 89%;
+    }
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Sign Up</h1>
+		
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Sign Up</button>
+		<br>
+		<div class="login">
+			Already have an account? <a href="login.html">Log in here</a>.
+		</div>
+	</div>
+	<div id="footer"style="font-weight: bold;">
+		&copy; Shlok Paliwal
+	</div>
+</body>
+</html>
